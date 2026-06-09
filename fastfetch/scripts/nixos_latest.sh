@@ -110,7 +110,7 @@ fi
       # --- Next release ---
   if [[ -n "$next_version" ]]; then
     printf '%s%s├ 󱓞  Released %s  %s   %sNixOS %s %s\n' \
-      "$pad" "$c1" "$reset" "$next_version" "$c1" "$major_next" "$reset"
+      "$pad" "$c1" "$reset" "$next_version" $'\e[1;38;2;171;255;74m' "$major_next" "$reset"
   fi
 
   # --- Current version ---
@@ -123,7 +123,7 @@ fi
         "$pad" "$c4" "$reset" "$chan" "$c4" "$reset"
     else
       printf '%s%s├ 󰓦  Channel  %s  %s  %supgrade available!%s\n' \
-        "$pad" "$c4" "$reset" "$chan" $'\e[1;33m' "$reset"
+        "$pad" "$c4" "$reset" "$chan" $'\e[1;38;2;171;255;74m' "$reset"
     fi
   else
     printf '%s%s├ 󰓦  Channel  %s  %s(unavailable)%s\n' \
@@ -140,7 +140,7 @@ fi
         "$pad" "$c6" "$hydra_corner" "$reset" "$hyd" "$c6" "$reset" "$ago_str"
     else
       printf '%s%s%s└ 󰄉  Hydra    %s  %s  %snewer%s  %s\n' \
-        "$pad" "$c6" "$hydra_corner" "$reset" "$hyd" "$dim" "$reset" "$ago_str"
+        "$pad" "$c6" "$hydra_corner" "$reset" "$hyd" $'\e[1;38;2;171;255;74m' "$reset" "$ago_str"
     fi
   else
     printf '%s%s%s└ 󰄉  Hydra    %s  %s(unavailable)%s\n' \
