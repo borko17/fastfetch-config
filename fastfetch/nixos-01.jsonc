@@ -125,7 +125,7 @@
         {
             "type": "os",
             "key": "{$10}├   Distro    ",
-            "format": "{name} {build-id} ({codename}) {arch}"
+            //"format": "{name} {build-id} ({codename}) {arch}"
         },
         {
             "type": "kernel",
@@ -227,18 +227,23 @@
             "key": "{$10}├ 󰥔  Date/Time ",
         },
         {
-            "key": "{$8}├   OS Age    ",
+            "key": "{$6}├   OS Age    ",
             "type": "disk",
             "folders": "/",
             "format": "{create-time:10} ({days} days)"
         },
         {
             "type": "uptime",
-            "key": "{$6}└   Uptime    ",
+            "key": "{$3}└   Uptime    ",
         },
-        //{
-            //"type": "custom",
-            //"format": "                {$10}󱄅 {$9}󱄅 {$8}󱄅 {$7}󱄅 {$6}󱄅 {$5}󱄅 {$4}󱄅 {$3}󱄅 {$2}󱄅 {$1}󱄅"
-        //},
+        {
+            "type": "command",
+            "key": " ",
+            "text": "bash ~/.config/fastfetch/scripts/nixos_latest.sh"
+        },
+        {
+            "type": "custom",
+            "format": "                {$10}󱄅 {$9}󱄅 {$8}󱄅 {$7}󱄅 {$6}󱄅 {$5}󱄅 {$4}󱄅 {$3}󱄅 {$2}󱄅 {$1}󱄅"
+        },
     ]
 }
