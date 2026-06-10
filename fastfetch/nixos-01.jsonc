@@ -239,7 +239,7 @@
         {
             "type": "command",
             "key": " ",
-            "text": "bash ~/.config/fastfetch/scripts/nixos_fastfetch.sh"
+            "text": "bash ~/.config/fastfetch/scripts/nixos-01_fastfetch.sh"
         },
         {
             "type": "custom",
