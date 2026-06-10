@@ -1,7 +1,7 @@
 {
     "logo": {
         "type": "auto",
-        "source": "~/.config/fastfetch/logo/nixos_logo_1.webp",
+        "source": "~/.config/fastfetch/logo/nixos_logo_2.webp",
         "height": 21,
         "width": 40,
         "padding": {
