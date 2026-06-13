@@ -125,7 +125,7 @@
         {
             "type": "os",
             "key": "{$10}├   Distro    ",
-            "format": "{name} {build-id} ({codename}) {arch}"
+            //"format": "{name} {build-id} ({codename}) {arch}"
         },
         {
             "type": "kernel",
@@ -235,6 +235,11 @@
         {
             "type": "uptime",
             "key": "{$3}└   Uptime    ",
+        },
+        {
+            "type": "command",
+            "key": " ",
+            "text": "bash ~/.config/fastfetch/scripts/nixos-01_fastfetch.sh"
         },
         {
             "type": "custom",

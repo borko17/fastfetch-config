@@ -237,11 +237,6 @@
             "key": "{$6}└   Uptime    ",
         },
         {
-            "type": "command",
-            "key": " ",
-            "text": "bash ~/.config/fastfetch/scripts/nixos-02_fastfetch.sh"
-        },
-        {
             "type": "custom",
             "format": "                {$10}󱄅 {$9}󱄅 {$8}󱄅 {$7}󱄅 {$6}󱄅 {$5}󱄅 {$4}󱄅 {$3}󱄅 {$2}󱄅 {$1}󱄅"
         },
